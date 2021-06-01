@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <title> It's all about BOXes </title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body">
+    <div class="box-1">
+        <h1>inside the box VS. outside the box</h1>
+    </div>
+    <nav>
+        <button><a href="index.html">Homepage</a></button>
+        <button><a href="about.html">About us</a></button>
+        <button><a href="contact.html">Contact</a></button>
+    </nav>
+    <img width="400px center" src="img/Contact.png">
+    <h3 class="box-headers">Contact us</h3>
+    <main>
+        <form name="contact" method="POST" data-netlify="true">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" />
+            </div>
+            <div>
+                <label for="date">Date of birth</label>
+                <input type="date" name="date" id="date" min="2019-06-10" />
+            </div>
+            <div>
+                Gender
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" />
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female" />
+                </div>
+            </div>
+            <hr>
+            <div>
+                Favorite Tool to get out of the box
+                <div>
+                    <label for="Stanley knife">Stanley knife</label>
+                    <input type="checkbox" name="Stanley knife" id="Stanley knife" />
+                </div>
+                <div>
+                    <label for="Butchers knife">Butchers knife</label>
+                    <input type="checkbox" name="Butchers knife" id="Butchers knife" />
+                </div>
+                <div>
+                    <label for="Sissors">Sissors</label>
+                    <input type="checkbox" name="Sissors" id="Sissors" />
+                </div>
+                <div>
+                    <label for="Fingernail">Fingernail</label>
+                    <input type="checkbox" name="Fingernail" id="Fingernail" />
+                </div>
+            </div>
+            <hr>
+            <div>
+                <label for="color">Favoriete color box</label>
+                <input type="color" name="color" id="color" />
+            </div>
+            <hr>
+
+            <div>
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+            <input type="hidden" name="hidden" value="hi" />
+            <div>
+                <label for="file">File</label>
+                <input id="file" type="file" name="file" />
+            </div>
+
+            <div>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" />
+            </div>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Send</button>
+            <hr>
+        </form>
+    </main>
+</body>
+<footer class="b">Copyright Boxing B.V. Boxmeer</footer>
+
+</html>
